@@ -1,4 +1,4 @@
-## 📌 과제 설명
+## 설명
 
 사칙연산(+, -, /, x)과 괄호를 이용한 계산이 가능하게 구현했습니다.
 
@@ -6,7 +6,7 @@
 
 ![work-flow](https://user-images.githubusercontent.com/82152173/197769035-5ca77eb5-7e41-4327-832f-3b69685322ae.png)
 
-## 👩‍💻 요구 사항과 구현 내용
+## 요구 사항
 
 - [x] 더하기
 - [x] 빼기
@@ -19,43 +19,43 @@
 
 ## 주요 인터페이스, 클래스 소개
 
-### Console
+#### Console
 
 - 입력과 출력의 역할을 합니다.
 
-### Calculator
+#### Calculator
 
 - 전체적인 계산기 프로그램의 동작과, 계산의 역할을 합니다.
 
-### TokenType
+#### TokenType
 
 - 계산식에 들어올 수 있는 문자의 타입을 뜻합니다. (숫자, 사칙연산자, 괄호)
 
-### Numbers
+#### Numbers
 
 - 계산식에 들어온 숫자를 뜻합니다.
 
-### Letter
+#### Letter
 
 - 계산식에 들어온 문자를 뜻합니다. (사칙연산자, 괄호)
 
-### Operator
+#### Operator
 
 - 계산식에 들어온 사칙연산자를 뜻합니다.
 
-### Bracket
+#### Bracket
 
 - 계산식에 들어온 괄호를 뜻합니다.
 
-### TokenTypeFactory
+#### TokenTypeFactory
 
 - 문자가 들어오면 문자에 맞는 TokenType 의 구현체를 반환해줍니다.
 
-### FormulaValidator
+#### FormulaValidator
 
 - 입력 받은 계산식을 정규식을 이용하여 나눕니다. ex) 1x13+(1+2) 의 경우 1, x, 13, +, (, 1, +, 2, ) 로 나눕니다.
 - 계산식이 올바른 식인지 검증합니다.
 
-### PostfixParser
+#### PostfixParser
 
 - 검증된 계산식을 후위표기식으로 변환합니다.
